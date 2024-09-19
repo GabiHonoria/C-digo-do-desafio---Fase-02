@@ -1,0 +1,134 @@
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(90deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between; /* Separar logo e menu */
+  align-items: center;
+  position: fixed; /* Fixa o menu no topo */
+  top: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#logo img {
+  height: 40px; /* Ajuste a altura da logo conforme necessário */
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-left: 30px; /* Espaçamento entre os itens do menu */
+}
+
+ul li a {
+  text-decoration: none;
+  color: #1f1534;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+ul li a:hover {
+  opacity: 1;
+  font-weight: bold;
+}
+
+main {
+  padding: 100px 20px; /* Adiciona espaçamento abaixo do menu fixo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: left;
+  width: 80%; /* Ajuste o valor conforme necessário para o alinhamento */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.hero img {
+  max-width: 100%;
+  height:auto;
+  margin-bottom: 20px;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.hero-content {
+  margin-left: 10%; /* Ajusta a margem esquerda para alinhar o conteúdo à esquerda */
+}
+
+.hero h1 {
+  font-family: "Mulish", sans-serif;
+  font-size: 3rem; /* Tamanho da fonte maior */
+  line-height: 1.2;
+  color: #1f1534;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #89c5cc;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #7d7987;
+  margin-bottom: 40px;
+}
+
+button {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  background: #69B99D;
+  border: none;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+
+button:hover {
+  background: #4EA788;
+}
+
+footer {
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer a {
+  font-weight: bold;
+  color: #1f1534;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
